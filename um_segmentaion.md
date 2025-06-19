@@ -1,5 +1,5 @@
 ## Intro
-We want a router to have the ability to read its clients TCP connections outgoing data, as a stream (instead of a raw packets)
+We want a router to have the ability to read its clients TCP connections outgoing data, as a stream (instead of as raw packets)
 
 ### Minimal **Transparent TCP Proxy** on Linux 2.6.37
 
