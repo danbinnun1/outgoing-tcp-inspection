@@ -22,6 +22,7 @@ def test_router_topology(tmp_path):
     base = '{tmp_path}'
     ns_dir = os.path.join(base, 'netns')
     os.makedirs(ns_dir, exist_ok=True)
+    os.makedirs('/run/netns', exist_ok=True)
     subprocess.run(['mount', '--bind', ns_dir, '/run/netns'], check=True)
     subprocess.run(['mount', '--make-private', '/run/netns'], check=True)
     subprocess.run(['ip', 'netns', 'add', 'server'], check=True)
